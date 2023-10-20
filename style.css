@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    background: #000000;
+    color: #ffffff;
+  }
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+a:hover {
+    text-decoration: underline;
+  }
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+
+.wrapper {
+    max-width: 800px;
+    padding: 32px;
+  }
+
+.hero {
+    font-family: "AR One Sans", sans-serif;
+    font-size: 54px;
+    margin: 0;
+  }
+
+.decription {
+    line-height: 36px;
+    font-size: 26px;
+    margin: 14px 0;
+    font-family: "Gabarito", cursive;
+  }
+
+.url-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+.url-container {
+    margin-right: 50px;
+  }
+
+.list-entry {
+    font-family: "AR One Sans", sans-serif;
+    margin: 15px 0;
+  }
+
+.list-pointer {
+    opacity: 0.5;
+  }
+
+.list-entry,
+  .contact {
+    font-size: 22px;
+    font-family: "Gabarito", cursive;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .hero span {
+      padding: 8px;
+    }
+    :not(.url-container ~ .url-container).url-container p:last-child {
+      margin-bottom: 0;
+    }
+  }
